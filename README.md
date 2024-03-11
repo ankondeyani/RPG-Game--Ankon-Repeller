@@ -1,3 +1,8 @@
+# Try the Game!
+Where can you play the game? [Click Here](https://ankondeyani.github.io/RPG-Game--Ankon-Repeller/)
+
+---
+
 # Introduction
 
 Hello, Hello, Hi!
