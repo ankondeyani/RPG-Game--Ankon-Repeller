@@ -34,7 +34,7 @@ const monsters = [
     health: 60
   },
   {
-    name: "Ankon at his peak",
+    name: "Boss Level Ankon",
     level: 20,
     health: 300
   }
@@ -42,7 +42,7 @@ const monsters = [
 const locations = [
   {
     name: "town square",
-    "button text": ["Go to store", "Go to cave", "Fight dragon"],
+    "button text": ["Go to store", "Go to cave", "Fight Boss Level Ankon"],
     "button functions": [goStore, goCave, fightDragon],
     text: "You are in the town square. You see a sign that says \"Store\"."
   },
@@ -56,19 +56,19 @@ const locations = [
     name: "cave",
     "button text": ["Fight Ankon at the age of 2", "Fight Ankon at the age of 10", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
+    text: "You enter the cave. You see some monsters, who all are basically different age versions of Ankon."
   },
   {
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
     "button functions": [attack, dodge, goTown],
-    text: "You are fighting a monster."
+    text: "You are fighting a monster named Ankon."
   },
   {
     name: "kill monster",
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
-    text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+    text: 'The monsterous Ankon screams "Arg!" as he dies. You gain experience points and find gold.'
   },
   {
     name: "lose",
@@ -80,7 +80,7 @@ const locations = [
     name: "win", 
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"], 
     "button functions": [restart, restart, restart], 
-    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;" 
+    text: "You defeat the Boss Level Ankon! YOU WIN THE GAME! &#x1F389;" 
   },
   {
     name: "easter egg",
@@ -185,8 +185,8 @@ function goFight() {
 }
 
 function attack() {
-  text.innerText = "The " + monsters[fighting].name + " attacks.";
-  text.innerText += " You attack it with your " + weapons[currentWeapon].name + ".";
+  text.innerText = "The monster" + monsters[fighting].name + " attacks.";
+  text.innerText += " You attack him with your " + weapons[currentWeapon].name + ".";
   health -= getMonsterAttackValue(monsters[fighting].level);
   if (isMonsterHit()) {
     monsterHealth -= weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;    
@@ -221,7 +221,7 @@ function isMonsterHit() {
 }
 
 function dodge() {
-  text.innerText = "You dodge the attack from the " + monsters[fighting].name;
+  text.innerText = "You dodge the attack from the monster" + monsters[fighting].name;
 }
 
 function defeatMonster() {
