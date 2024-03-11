@@ -1,5 +1,5 @@
 # Try the Game!
-Where can you play the game? [Click Here](https://ankondeyani.github.io/RPG-Game--Ankon-Repeller/)
+Where can you play the game? <a href="https://ankondeyani.github.io/RPG-Game--Ankon-Repeller/" target="_blank">Click Here</a>
 
 ---
 
@@ -7,7 +7,7 @@ Where can you play the game? [Click Here](https://ankondeyani.github.io/RPG-Game
 
 Hello, Hello, Hi!
 
-I have started learning JavaScript using the freeCodeCamp's [JavaScript Algorithms and Data Structures](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8) course. While learning, this was the very first project of building a Role Playing Game. I tweaked some of the elements of it, and I have plans to add more features in future as I learn more. 
+I have started learning JavaScript using the freeCodeCamp's <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8" target="_blank">JavaScript Algorithms and Data Structures</a> course. While learning, this was the very first project of building a Role Playing Game. I tweaked some of the elements of it, and I have plans to add more features in future as I learn more. 
 
 ---
 
@@ -23,4 +23,4 @@ The game has the following interesting features:
 
 ---
 
-Have fun playing the game! If you want to build this game, head to [freeCodeCamp](https://www.freecodecamp.org), finish the [Responsive Website Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/) and start JavaScript Algorithms and Data Structures Certification (Beta).
+Have fun playing the game! If you want to build this game, head to <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>, finish the <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">Responsive Website Design Certification</a> and start JavaScript Algorithms and Data Structures Certification (Beta).
