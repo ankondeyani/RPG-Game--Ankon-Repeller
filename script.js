@@ -16,6 +16,8 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
+const button4 = document.querySelector('#button4');
+
 const weapons = [
   { name: 'stick', power: 5 },
   { name: 'dagger', power: 30 },
@@ -44,7 +46,7 @@ const locations = [
     name: "town square",
     "button text": ["Go to store", "Go to cave", "Fight Boss Level Ankon"],
     "button functions": [goStore, goCave, fightDragon],
-    text: "You are in the town square. You see a sign that says \"Store\"."
+    text: "You are in the town square. You see two signs that say \"Go to store\" and \"Go to cave\"."
   },
   {
     name: "store",
@@ -94,6 +96,7 @@ const locations = [
 button1.onclick = goStore;
 button2.onclick = goCave;
 button3.onclick = fightDragon;
+button4.onclick = restart;
 
 function update(location) {
   monsterStats.style.display = "none";
@@ -250,6 +253,7 @@ function restart() {
   healthText.innerText = health;
   xpText.innerText = xp;
   goTown();
+  text.innerText="Restarted? No worries! Welcome again to Ankon Repeller. You must defeat the Boss level Ankon that is preventing people from making love. You are in the town square. Where do you want to go? Use the buttons above.";
 }
 
 function easterEgg() {
