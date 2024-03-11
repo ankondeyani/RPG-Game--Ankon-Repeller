@@ -185,7 +185,7 @@ function goFight() {
 }
 
 function attack() {
-  text.innerText = "The monster" + monsters[fighting].name + " attacks.";
+  text.innerText = "The monster " + monsters[fighting].name + " attacks.";
   text.innerText += " You attack him with your " + weapons[currentWeapon].name + ".";
   health -= getMonsterAttackValue(monsters[fighting].level);
   if (isMonsterHit()) {
@@ -221,7 +221,7 @@ function isMonsterHit() {
 }
 
 function dodge() {
-  text.innerText = "You dodge the attack from the monster" + monsters[fighting].name;
+  text.innerText = "You dodge the attack from the monster " + monsters[fighting].name;
 }
 
 function defeatMonster() {
